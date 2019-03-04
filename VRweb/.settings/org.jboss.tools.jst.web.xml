@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<file-systems VERSION="2.0.0" application-name="TCweb"
+ model-entity="FileSystems" workspace-home="./WebRoot/WEB-INF">
+ <file-system NAME="WEB-INF" location="%workspace.home%" model-entity="FileSystemFolder"/>
+ <file-system NAME="WEB-ROOT" info="Content-Type=Web"
+  location="%workspace.home%/.." model-entity="FileSystemFolder"/>
+ <file-system NAME="lib" location="%workspace.home%/lib" model-entity="FileSystemFolder"/>
+ <file-system NAME="classes" location="%workspace.home%/classes" model-entity="FileSystemFolder"/>
+ <file-system NAME="TCweb" location="%eclipse.project%" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-annotations-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\annotations-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-catalina-ant.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\catalina-ant.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-catalina-ha.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\catalina-ha.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-catalina-storeconfig.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\catalina-storeconfig.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-catalina-tribes.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\catalina-tribes.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-catalina.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\catalina.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ecj-4.4.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\ecj-4.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-el-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\el-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jasper-el.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\jasper-el.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jasper.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\jasper.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jsp-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\jsp-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-servlet-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\servlet-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-coyote.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-coyote.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-dbcp.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-dbcp.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-i18n-es.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-i18n-es.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-i18n-fr.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-i18n-fr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-i18n-ja.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-i18n-ja.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-jdbc.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-jdbc.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-jni.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-jni.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-spdy.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-spdy.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-util-scan.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-util-scan.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-util.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-util.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-websocket.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\tomcat-websocket.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-websocket-api.jar"
+  location="E:\Program Files\Apache Software Foundation\apache-tomcat-8.0.15\lib\websocket-api.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.servlet.jsp.jstl.jar"
+  location="E:\MyEclipse Professional 2014\plugins\com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640\data\libraryset\JSTL1.2.1\lib\javax.servlet.jsp.jstl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jstl-impl.jar"
+  location="E:\MyEclipse Professional 2014\plugins\com.genuitec.eclipse.j2eedt.core_11.5.0.me201311281640\data\libraryset\JSTL1.2.1\lib\jstl-impl.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-resources.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\resources.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dnsns.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-localedata.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunjce_provider.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunmscapi.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunpkcs11.jar"
+  location="E:\Program Files\Java\jdk1.6.0_39\jre\lib\ext\sunpkcs11.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jfr.jar"
+  location="E:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_1.7.0.u45\jre\lib\jfr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-access-bridge-32.jar"
+  location="E:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_1.7.0.u45\jre\lib\ext\access-bridge-32.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaccess.jar"
+  location="E:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_1.7.0.u45\jre\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunec.jar"
+  location="E:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_1.7.0.u45\jre\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-zipfs.jar"
+  location="E:\MyEclipse Professional 2014\binary\com.sun.java.jdk7.win32.x86_1.7.0.u45\jre\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="src" location="%workspace.home%/../../src" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-antlr-2.7.6.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\antlr-2.7.6.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aspectjweaver.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\aspectjweaver.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-backport-util-concurrent.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\backport-util-concurrent.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\com.springsource.com.mchange.v2.c3p0-0.9.1.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-com.springsource.net.sf.cglib-2.2.0.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\com.springsource.net.sf.cglib-2.2.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-com.springsource.org.aopalliance-1.0.0.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\com.springsource.org.aopalliance-1.0.0.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-com.springsource.org.apache.commons.logging-1.1.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\com.springsource.org.apache.commons.logging-1.1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-com.springsource.org.quartz-1.6.2.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\com.springsource.org.quartz-1.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-collections-3.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\commons-collections-3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-fileupload-1.2.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\commons-fileupload-1.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-io-1.3.2.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\commons-io-1.3.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dom4j-1.6.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\dom4j-1.6.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ehcache-1.5.0.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\ehcache-1.5.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-freemarker-2.3.16.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\freemarker-2.3.16.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-hibernate-jpa-2.0-api-1.0.0.Final.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\hibernate-jpa-2.0-api-1.0.0.Final.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-hibernate-validator-4.3.1.final-1.0.0.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\hibernate-validator-4.3.1.final-1.0.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-hibernate3.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\hibernate3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-asl-1.9.13.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\jackson-core-asl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-asl-1.9.13.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\jackson-mapper-asl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javassist-3.12.0.GA.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\javassist-3.12.0.GA.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javassist-3.7.ga.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\javassist-3.7.ga.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jta-1.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\jta-1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mysql-connector-java-5.1.30-bin.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\mysql-connector-java-5.1.30-bin.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ognl-3.0.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\ognl-3.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.aop-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.aop-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.asm-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.asm-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.aspects-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.aspects-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.beans-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.beans-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.context-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.context-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.context.support-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.context.support-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.core-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.core-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.expression-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.expression-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.instrument-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.instrument-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.instrument.tomcat-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.instrument.tomcat-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.jdbc-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.jdbc-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.jms-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.jms-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.orm-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.orm-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.oxm-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.oxm-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.test-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.test-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.transaction-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.transaction-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-org.springframework.web-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.web-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.portlet-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.web.portlet-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.servlet-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.web.servlet-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system
+  NAME="lib-org.springframework.web.struts-3.0.5.RELEASE.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\org.springframework.web.struts-3.0.5.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-slf4j-api-1.6.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\slf4j-api-1.6.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-slf4j-nop-1.6.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\slf4j-nop-1.6.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-struts2-core-2.2.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\struts2-core-2.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-struts2-spring-plugin-2.2.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\struts2-spring-plugin-2.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-validation-api-1.0.0.GA.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\validation-api-1.0.0.GA.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-xwork-core-2.2.1.jar"
+  location="F:\毕业论文\毕业作品\VRweb\WebRoot\WEB-INF\lib\xwork-core-2.2.1.jar" model-entity="FileSystemJar"/>
+ <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
+  <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
+   model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>
+ </web>
+</file-systems>

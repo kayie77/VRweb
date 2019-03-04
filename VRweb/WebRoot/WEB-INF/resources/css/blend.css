@@ -1,0 +1,598 @@
+body{
+	font-family:"PTSansRegular";
+	font-size:14px;
+	line-height:1.428571429;
+	color:#606159;
+	background-color:#fff;
+	padding-top:66px
+}
+
+ul.blend-nav li a{
+	font-size:18px;
+	color:#777;
+	font-family:PakExp;
+	text-transform:uppercase
+}
+
+ul.blend-nav li a:hover{
+	color:#9ca538;
+	text-decoration:none
+}
+
+.btn{
+	border-radius:0
+}
+
+.btn-green{
+	color:#fff;
+	background-color:#9ca538;
+	border-color:#9ca538
+}
+.btn-blue{
+	color:#fff;
+	background-color:#369FA4;
+	border-color:#369FA4
+}
+
+.btn-green:hover,.btn-green:focus,.btn-green:active,.btn-green.active{
+	color:#606159;
+	background-color:#efefef;
+	border-color:#efefef
+}
+
+.btn-blue:hover,.btn-blue:focus,.btn-blue:active,.btn-blue.active{
+	color:#606159;
+	background-color:#efefef;
+	border-color:#efefef
+}
+
+
+
+
+.user-social li a.facebook span{
+	background:url("/Content/images/facebook.png") no-repeat scroll 10px 9px transparent
+}
+
+.user-social li a.linkedin span{
+	background:url("/Content/images/linkedin.png") no-repeat scroll 3px 3px transparent
+}
+
+.user-social li a.website span{
+	background:url("/Content/images/icon-sprite.png") no-repeat scroll -79px 0 transparent
+}
+
+.pager li{
+	margin:0 1px
+}
+
+.pager li a:hover{
+	background:#e2e1dd;
+	color:#606159
+}
+
+.pager li.active a{
+	background:#e2e1dd;
+	color:#606159
+}
+
+#header .navbar-brand{
+	margin:15px 0 15px 15px;
+	width:200px;
+	background:transparent url("/Content/images/header-logo.png") no-repeat 0 0;
+	width:31px;
+	height:35px;
+	display:block
+}
+
+#header .navbar-brand img{
+	display:none
+}
+
+#header .navbar{
+	background:#fff
+}
+
+#header .navbar button{
+	font-family:"PakExp";
+	text-transform:uppercase;
+	margin-top:15px;
+	font-size:12px;
+	color:#777
+}
+
+#header .navbar button.navbar-toggle{
+	padding-left:26px
+}
+
+#header li{
+	border-bottom:solid 1px #ccc
+}
+
+#header li a:hover,#header li a:focus{
+	background:transparent
+}
+
+#header li.active a{
+	color:#9ca538
+}
+
+#header li:last-child{
+	border-bottom:0
+}
+
+.skdslider{
+	position:relative;
+	height:150px;
+	display:none
+}
+
+.skdslider ul.slides{
+	margin:0;
+	padding:0;
+	list-style-type:none
+}
+
+.skdslider ul.slides li{
+	height:150px;
+	left:0;
+	position:absolute;
+	top:0;
+	display:none;
+	width:100%;
+	overflow:hidden
+}
+
+.skdslider ul.slides li img{
+	display:none
+}
+
+.skdslider ul.slides li .slide-container{
+	position:relative
+}
+
+.skdslider ul.slides li .slide-container .slide-desc{
+	width:100%;
+	padding:20px 20px 0;
+	text-align:center
+}
+
+.skdslider ul.slides li .slide-container .slide-desc h2{
+	color:#fff;
+	font-family:"PakSb";
+	font-size:32px;
+	line-height:32px;
+	margin-bottom:10px;
+	margin-top:0;
+	text-align:center
+}
+
+.skdslider ul.slides li .slide-container .slide-desc p{
+	background:#369fa4;
+	display:inline-block;
+	position:relative;
+	overflow:hidden;
+	color:#fff
+}
+
+.skdslider ul.slides li .slide-container .slide-desc p span{
+	display:none;
+	background:#369fa4
+}
+
+.skdslider ul.slides li .slide-container .slide-desc p a{
+	font-size:14px;
+	margin:0 auto
+}
+
+.skdslider a.prev{
+	display:none
+}
+
+.skdslider a.next{
+	display:none
+}
+
+#Callout{
+	font-size:17.5px;
+	line-height:24px;
+	font-family:"PTSansRegular";
+	padding:30px 0;
+	text-align:center
+}
+
+#Callout p{
+	margin:0 0 20px
+}
+
+#Callout a.btn{
+	font-size:18px;
+	padding:10px 25px
+}
+
+#main-content{
+	background:#efefef;
+	padding:35px 0 25px
+}
+
+#main-content .navbar-collapse{
+	margin-top:-15px
+}
+
+#main-content .navbar-collapse .filter-navigation{
+	margin-bottom:20px
+}
+
+#main-content .navbar-collapse .filter-navigation li{
+	padding-left:0;
+	display:block
+}
+
+#main-content .navbar-collapse .filter-navigation li a{
+	font-size:14px;
+	color:#777;
+	font-family:PakExp;
+	padding:5px 12px 5px 26px;
+	background:transparent url("/Content/images/bullet-off.png") no-repeat left 4px;
+	display:block
+}
+
+#main-content .navbar-collapse .filter-navigation li.active a{
+	background:transparent url("/Content/images/bullet-on.png") no-repeat left 4px
+}
+
+#main-content .news-list .media{
+	text-align:left
+}
+
+#main-content h1:first-child{
+	margin-top:0
+}
+
+
+
+@media(min-width:480px){
+	#header .navbar-brand{
+		margin:15px 0 15px 15px;
+		width:200px;
+		background:0;
+		width:auto;
+		height:auto;
+		display:block;
+		padding:0
+	}
+
+	#header .navbar-brand img{
+		display:block
+	}
+
+	.media{
+		text-align:left
+	}
+
+	.media img{
+		float:left;
+		margin:0 20px 0 0
+	}
+
+	#footer .newsletter .input-group{
+		width:300px;
+		margin:0 auto
+	}
+
+	#footer .copyright br{
+		display:none
+	}
+
+}
+
+@media(min-width:624px){
+	h1{
+		font-size:50px
+	}
+
+	h1 small{
+		display:inline;
+		font-size:24px;
+		padding-top:0
+	}
+
+	h2{
+		font-size:37.25px
+	}
+
+	h3{
+		font-size:24.5px
+	}
+
+	.skdslider{
+		height:250px
+	}
+
+	.skdslider ul.slides li{
+		height:250px
+	}
+
+	.skdslider ul.slides li img{
+		display:none
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc{
+		padding:25px 30px 0
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc h2{
+		font-size:60px;
+		line-height:60px;
+		margin-bottom:15px
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc p{
+		color:#fff
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc p span{
+		font-size:14px;
+		display:block;
+		height:34px;
+		line-height:34px;
+		float:left;
+		padding:0 12px
+	}
+
+	.skdslider a.prev{
+		display:none
+	}
+
+	.skdslider a.next{
+		display:none
+	}
+
+	#footer .newsletter .input-group{
+		width:320px;
+		margin:0;
+		float:left
+	}
+
+	#footer .social-buttons{
+		margin:4px 0 0;
+		float:right
+	}
+
+	#footer .copyright{
+		margin-top:20px
+	}
+
+}
+
+@media(min-width:768px){
+	.iso-wrapper{
+		width:600px
+	}
+
+	.user-social li{
+		float:none
+	}
+
+	.user-social li a{
+		text-indent:0;
+		overflow:visible;
+		width:auto
+	}
+
+	.filter-nav{
+		background:#e2e2e2;
+		display:inline-block;
+		-webkit-border-radius:15px;
+		-moz-border-radius:15px;
+		-o-border-radius:15px;
+		border-radius:15px;
+		margin-bottom:20px;
+		padding-left:15px
+	}
+
+	.filter-nav li{
+		padding-left:0;
+		padding-right:0
+	}
+
+	.filter-nav li a{
+		color:#606159;
+		display:block;
+		padding:5px 12px 5px 26px;
+		margin:2px 0;
+		background:url("../image/bullet-off.png") no-repeat scroll left 5px transparent;
+		text-transform:uppercase;
+		font-family:"PakExp";
+		text-decoration:none
+	}
+
+	.filter-nav li.active a{
+		background:url("../image/bullet-on.png") no-repeat scroll left 5px transparent;
+		color:#9ca538
+	}
+
+	#header .navbar-brand{
+		margin:15px 0 15px 0
+	}
+
+	#header .navbar-collapse{
+		float:right;
+		padding:0
+	}
+
+	#header .navbar-collapse li{
+		border-bottom:0
+	}
+
+	#header .navbar-collapse li a{
+		/* background:transparent url("../image/bullet-off.png") no-repeat left 23px; */
+		padding-left:23px;
+		padding-top:23px;
+		padding-bottom:20px
+	}
+
+	#header .navbar-collapse li a:hover{
+		/* background:transparent url("../image/bullet-on.png") no-repeat left 23px */
+	}
+
+	#header .navbar-collapse li:last-child a{
+		padding-right:0
+	}
+
+	#header li:last-child{
+		-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+		box-shadow:none
+	}
+
+	.skdslider{
+		height:350px
+	}
+
+	.skdslider ul.slides li{
+		height:350px
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc{
+		padding:25px 30px 0;
+		text-align:left
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc h2{
+		font-size:80px;
+		line-height:80px;
+		margin-bottom:15px;
+		text-align:left;
+		margin-top:30px
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc p span{
+		font-size:18px;
+		height:39px;
+		line-height:39px;
+		float:left
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc p a{
+		font-size:18px;
+		float:left
+	}
+
+	.skdslider a.prev{
+		background:url("../image/carousel-left.png") no-repeat scroll 0 0 transparent;
+		background-size:42px 42px;
+		width:42px;
+		height:42px;
+		display:block;
+		cursor:pointer;
+		position:absolute;
+		top:44%;
+		left:2%
+	}
+
+	.skdslider a.next{
+		background:url("../image/carousel-right.png") no-repeat scroll 0 0 transparent;
+		background-size:42px 42px;
+		width:42px;
+		height:42px;
+		display:block;
+		cursor:pointer;
+		position:absolute;
+		top:44%;
+		right:2%
+	}
+
+	#Callout p{
+		font-size:20px;
+		line-height:28px
+	}
+
+	#footer .container{
+		padding:0 15px
+	}
+
+	#footer .footer-nav{
+		float:left
+	}
+
+	#footer .copyright{
+		float:right;
+		margin:4px 0 0
+	}
+
+}
+
+@media(min-width:992px){
+	.iso-wrapper{
+		width:900px
+	}
+
+	#epi-quickNavigator{
+		display:inline-block!important
+	}
+
+	#sub-header .container{
+		width:100%
+	}
+
+	#sub-header .container h1{
+		font-size:80px;
+		line-height:80px;
+		font-family:"PakSb"
+	}
+
+	#sub-header .container p.para-quote{
+		font-size:18px
+	}
+
+}
+
+@media(min-width:1200px){
+	.iso-wrapper{
+		width:1200px
+	}
+
+	.skdslider{
+		height:427px
+	}
+
+	.skdslider ul.slides li{
+		height:427px
+	}
+
+	.skdslider ul.slides li .slide-container{
+		position:relative
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc{
+		width:75%;
+		padding:75px 0;
+		margin:0 50px
+	}
+
+	.skdslider ul.slides li .slide-container .slide-desc h2{
+		font-size:80px;
+		line-height:80px;
+		margin-bottom:30px
+	}
+
+	.skdslider a.prev{
+		background-size:83px 83px;
+		width:83px;
+		height:83px
+	}
+
+	.skdslider a.next{
+		background-size:83px 83px;
+		width:83px;
+		height:83px
+	}
+
+}
+
+@media(min-width:1340px){
+	.skdslider ul.slides li .slide-container .slide-desc{
+		margin:0
+	}
+
+}

@@ -1,0 +1,6 @@
+数据库名称：shoolpano
+用户名：root	
+密码：123456
+
+
+首页：http://localhost:8080/VRweb/index

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 指定Hibernate映射文件的DTD信息 
+ Hibernate映射文件的根元素 -->
+<hibernate-mapping  package="org.lwt.VRweb.model">
+	<class name="Scenic" table="scenics">
+  		<!-- 映射标识属性 -->
+        <id column="scenic_id" name="scenic_id" type="integer">
+   			 <!-- 指定使用identity主键生成策略 -->
+            <generator class="identity"/>
+        </id>
+ 		 <!-- 映射普通属性 -->
+        <property column="scenic_name" length="30" name="scenic_name" not-null="true" type="string"/>
+        <property column="scenic_detail"  name="scenic_detail" not-null="true" type="string"/>
+        <property name="AC" column="access_count" type="integer" not-null="true"></property>
+        <many-to-one name="Category" column="shool_id"  not-null="true" lazy="false"/>
+        <many-to-one name="City" column="city_id"  not-null="true" lazy="false"/>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,765 @@
+<krpano version="1.16" title="广西民族大学" onstart="startup();">
+<autorotate enabled="true" waittime="3.0" accel="1" speed="2" />
+	<include url="skin/vtourskin.xml" />
+
+	<!-- set skin settings: bingmaps? gyro? thumbnail controlling? tooltips? -->
+	<skin_settings bingmaps="false"
+	               bingmaps_key=""
+	               bingmaps_zoombuttons="false"
+	               gyro="true"
+	               thumbs_width="120" thumbs_height="80" thumbs_padding="10" thumbs_crop="0|40|240|160"
+	               thumbs_opened="true"
+	               thumbs_text="true"
+	               thumbs_dragging="true"
+	               thumbs_onhoverscrolling="false"
+	               thumbs_scrollbuttons="false"
+	               thumbs_scrollindicator="false"
+	               thumbs_loop="true"
+	               tooltips_thumbs="true"
+	               tooltips_hotspots="true"
+	               tooltips_mapspots="true"
+	               controlbar_offset="20"
+	               />
+
+
+	<!-- set optional skin logo url -->
+	<layer name="skin_logo" url="" scale="0.25" opened_onclick="openurl('...',_blank);" />
+
+
+	<action name="startup">
+		if(startscene === null, copy(startscene,scene[0].name));
+		set(autorotate.enabled,true);
+		loadscene(get(startscene), null, MERGE);
+		refreshInfo();
+		bombtimer(0);
+		selectmapspot(mapspot1);
+		playsound(bg, skin/sound0.mp3,0);  
+	</action>
+
+	<!-- 场景转换定时器 -->
+	<action name="bombtimer">
+	//showlog(true);
+	if(autorotate.enabled == true,
+		set(bt,%1);
+		add(bt,1);
+		delayedcall(1, bombtimer(get(bt)));
+		//trace('bt:',bt);
+		if(bt == 70, set(bt,0); skin_nextscene(+1);, );
+	);
+    </action>
+
+
+	<events onmousedown=" set(bt,0); " />
+	
+	<scene name="scene_1_(1)" title="南门" ntitle="南门" onstart="selectmapspot(mapspot1);refreshInfo();" thumburl="panos/1_(1).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(1).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3152" tiledimageheight="3152">
+				<cube url="panos/1_(1).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(1).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(1).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(1).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-37.419" atv="1.839" linkedscene="scene_1_(2)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="157.299" atv="2.630" linkedscene="scene_1_(13)" />
+
+	</scene>
+
+	<scene name="scene_1_(10)" title="相思湖三叉路口" ntitle="相思湖三叉路口"  onstart="selectmapspot(mapspot10);refreshInfo();" thumburl="panos/1_(10).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(10).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3192" tiledimageheight="3192">
+				<cube url="panos/1_(10).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(10).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(10).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(10).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="141.403" atv="0.107" linkedscene="scene_1_(11)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-155.473" atv="-0.368" linkedscene="scene_1_(18)" />
+
+	</scene>
+
+	<scene name="scene_1_(11)" title="国教楼" ntitle="国教楼" onstart="selectmapspot(mapspot11);refreshInfo();" thumburl="panos/1_(11).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(11).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3072" tiledimageheight="3072">
+				<cube url="panos/1_(11).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(11).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(11).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(11).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-128.682" atv="0.128" linkedscene="scene_1_(10)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="149.478" atv="-2.335" linkedscene="scene_1_(12)" />
+
+	</scene>
+
+	<scene name="scene_1_(12)" title="相思风雨桥前的草坪" ntitle="相思风雨桥前的草坪" onstart="selectmapspot(mapspot12);refreshInfo();" thumburl="panos/1_(12).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(12).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3140" tiledimageheight="3140">
+				<cube url="panos/1_(12).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(12).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(12).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(12).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="89.833" atv="0.026" linkedscene="scene_1_(8)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-72.083" atv="3.047" linkedscene="scene_1_(11)" />
+
+	</scene>
+
+	<scene name="scene_1_(13)" title="逸夫楼和政关学院" ntitle="逸夫楼和政关学院" onstart="selectmapspot(mapspot13);refreshInfo();" thumburl="panos/1_(13).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(13).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3168" tiledimageheight="3168">
+				<cube url="panos/1_(13).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(13).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(13).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(13).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_1_(14)" title="法律文化广场" ntitle="法律文化广场" onstart="selectmapspot(mapspot14);refreshInfo();" thumburl="panos/1_(14).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(14).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3154" tiledimageheight="3154">
+				<cube url="panos/1_(14).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(14).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(14).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(14).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+
+	</scene>
+
+	<scene name="scene_1_(15)" title="教育科学学院" ntitle="教育科学学院" onstart="selectmapspot(mapspot15);refreshInfo();" thumburl="panos/1_(15).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(15).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3154" tiledimageheight="3154">
+				<cube url="panos/1_(15).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(15).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(15).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(15).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-22.297" atv="4.026" linkedscene="scene_1_(17)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="165.920" atv="4.065" linkedscene="scene_1_(16)" />
+		
+
+	</scene>
+
+	<scene name="scene_1_(16)" title="玉兰路" ntitle="玉兰路" onstart="selectmapspot(mapspot16);refreshInfo();" thumburl="panos/1_(16).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(16).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3164" tiledimageheight="3164">
+				<cube url="panos/1_(16).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(16).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(16).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(16).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="133.041" atv="0.645" linkedscene="scene_1_(17)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="32.909" atv="-0.488" linkedscene="scene_1_(7)" />
+
+	</scene>
+
+	<scene name="scene_1_(17)" title="法学院" ntitle="法学院" onstart="selectmapspot(mapspot17);refreshInfo();" thumburl="panos/1_(17).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(17).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3144" tiledimageheight="3144">
+				<cube url="panos/1_(17).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(17).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(17).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(17).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-174.974" atv="-0.595" linkedscene="scene_1_(15)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-75.526" atv="1.147" linkedscene="scene_1_(16)" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="97.364" atv="5.050" linkedscene="scene_1_(20)" />
+		
+
+	</scene>
+
+	<scene name="scene_1_(18)" title="体育馆" ntitle="体育馆" onstart="selectmapspot(mapspot18);refreshInfo();" thumburl="panos/1_(18).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(18).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3148" tiledimageheight="3148">
+				<cube url="panos/1_(18).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(18).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(18).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(18).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-68.837" atv="4.399" linkedscene="scene_1_(19)" />
+
+	</scene>
+
+	<scene name="scene_1_(19)" title="八坡同心桥" ntitle="八坡同心桥" onstart="selectmapspot(mapspot19);refreshInfo();" thumburl="panos/1_(19).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(19).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3172" tiledimageheight="3172">
+				<cube url="panos/1_(19).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(19).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(19).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(19).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-82.264" atv="-0.677" linkedscene="scene_1_(20)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="104.575" atv="1.857" linkedscene="scene_1_(18)" />
+
+	</scene>
+
+	<scene name="scene_1_(2)" title="孔子像" ntitle="孔子像" onstart="selectmapspot(mapspot2);refreshInfo();" thumburl="panos/1_(2).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(2).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3160" tiledimageheight="3160">
+				<cube url="panos/1_(2).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(2).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(2).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(2).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="137.850" atv="5.121" linkedscene="scene_1_(3)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-77.123" atv="-0.917" linkedscene="scene_1_(1)" />
+
+	</scene>
+
+	<scene name="scene_1_(20)" title="科技楼与综合教学楼" ntitle="科技楼与综合教学楼" onstart="selectmapspot(mapspot20);refreshInfo();" thumburl="panos/1_(20).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(20).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3134" tiledimageheight="3134">
+				<cube url="panos/1_(20).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(20).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(20).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(20).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-146.159" atv="1.349" linkedscene="scene_1_(10)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="25.510" atv="3.617" linkedscene="scene_1_(19)" />
+
+	</scene>
+
+	<scene name="scene_1_(21)" title="四坡食堂" ntitle="四坡食堂" onstart="selectmapspot(mapspot21);refreshInfo();" thumburl="panos/1_(21).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(21).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3138" tiledimageheight="3138">
+				<cube url="panos/1_(21).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(21).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(21).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(21).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-44.008" atv="17.066" linkedscene="scene_1_(8)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="86.514" atv="2.619" linkedscene="scene_1_(6)" />
+
+	</scene>
+
+	<scene name="scene_1_(3)" title="大礼堂" ntitle="大礼堂" onstart="selectmapspot(mapspot3);refreshInfo();" thumburl="panos/1_(3).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(3).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3180" tiledimageheight="3180">
+				<cube url="panos/1_(3).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(3).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(3).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(3).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-160.773" atv="0.322" linkedscene="scene_1_(4)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-24.406" atv="4.266" linkedscene="scene_1_(2)" />
+
+	</scene>
+
+	<scene name="scene_1_(4)" title="更名纪念碑" ntitle="更名纪念碑" onstart="selectmapspot(mapspot4);refreshInfo();" thumburl="panos/1_(4).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(4).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3182" tiledimageheight="3182">
+				<cube url="panos/1_(4).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(4).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(4).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(4).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="83.702" atv="-0.031" linkedscene="scene_1_(6)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-95.885" atv="6.417" linkedscene="scene_1_(3)" />
+
+	</scene>
+
+	<scene name="scene_1_(5)" title="文学院" ntitle="文学院" onstart="selectmapspot(mapspot5);refreshInfo();" thumburl="panos/1_(5).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(5).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3144" tiledimageheight="3144">
+				<cube url="panos/1_(5).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(5).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(5).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(5).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-75.715" atv="2.534" linkedscene="scene_1_(9)" />
+
+	</scene>
+
+	<scene name="scene_1_(6)" title="聚雅苑" ntitle="聚雅苑" onstart="selectmapspot(mapspot6);refreshInfo();" thumburl="panos/1_(6).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(6).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3162" tiledimageheight="3162">
+				<cube url="panos/1_(6).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(6).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(6).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(6).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="98.935" atv="-2.229" linkedscene="scene_1_(5)" />
+
+	</scene>
+
+	<scene name="scene_1_(7)" title="灯光球场" ntitle="灯光球场" onstart="selectmapspot(mapspot7);refreshInfo();" thumburl="panos/1_(7).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(7).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3152" tiledimageheight="3152">
+				<cube url="panos/1_(7).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(7).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(7).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(7).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-153.233" atv="1.052" linkedscene="scene_1_(9)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-44.555" atv="1.587" linkedscene="scene_1_(10)" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="36.424" atv="-5.855" linkedscene="scene_1_(17)" />
+
+	</scene>
+
+	<scene name="scene_1_(8)" title="相思风雨桥" ntitle="相思风雨桥" onstart="selectmapspot(mapspot8);refreshInfo();" thumburl="panos/1_(8).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(8).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3152" tiledimageheight="3152">
+				<cube url="panos/1_(8).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(8).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(8).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(8).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="8.365" atv="1.061" linkedscene="scene_1_(12)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-172.282" atv="3.687" linkedscene="scene_1_(21)" />
+
+	</scene>
+
+	<scene name="scene_1_(9)" title="民族南路" ntitle="民族南路" onstart="selectmapspot(mapspot9);refreshInfo();" thumburl="panos/1_(9).tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="0" vlookat="0" fovtype="MFOV" fov="120" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/1_(9).tiles/preview.jpg" />
+
+		<image type="CUBE" multires="true" tilesize="512" progressive="false">
+			<level tiledimagewidth="3144" tiledimageheight="3144">
+				<cube url="panos/1_(9).tiles/%s/l3/%v/l3_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="1536" tiledimageheight="1536">
+				<cube url="panos/1_(9).tiles/%s/l2/%v/l2_%s_%v_%h.jpg" />
+			</level>
+			<level tiledimagewidth="768" tiledimageheight="768">
+				<cube url="panos/1_(9).tiles/%s/l1/%v/l1_%s_%v_%h.jpg" />
+			</level>
+			<mobile>
+				<cube url="panos/1_(9).tiles/mobile_%s.jpg" />
+			</mobile>
+		</image>
+
+		<!-- place your scene hotspots here -->
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-26.481" atv="5.009" linkedscene="scene_1_(7)" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="117.287" atv="2.026" linkedscene="scene_1_(1)" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-61.822" atv="-0.345" linkedscene="scene_1_(10)" />
+
+	</scene>
+
+	<plugin name="soundinterface" url="skin/soundinterface.swf" keep="true"/>
+	<events onloadcomplete="playbackgroundsound(skin/sound0.mp3,0);"/>
+
+
+     <plugin name="spot1html" keep="true" url="%SWFPATH%/plugins/textfield.swf" onhover="showtext(点击关闭);" onclick="showhideInfo();"
+          zorder="3" align="centertop" html="" x="0" y="0" visible="true" alpha="1" handcursor="false" width="40%"
+          enabled="true" background="false" children="false" autosize="left"
+          css="p{color:#FFFFFF; font-family:Times; font-size:40px; text-align:center;}"
+          effect="glow(0xFFFFFF,0.7,4,2);glow(0x000000,1,4,2);dropshadow(3,45,0x000000,2,0.6);"
+          />
+		  
+
+    <plugin name="spot3html" keep="true" url="%SWFPATH%/plugins/textfield.swf" onhover="showtext(点击关闭);"  onclick="showhideProInfo();"
+          zorder="3" align="centertop" html="" x="0" y="80" visible="false" alpha="1" handcursor="false" width="40%"
+          enabled="true" background="false" children="false" autosize="left"
+          css="p{color:#FFFFFF; font-family:Times; font-size:30px; text-align:center;}"
+          effect="glow(0xFFFFFF,0.7,4,2);glow(0x000000,1,4,2);dropshadow(3,45,0x000000,2,0.6);"
+          />
+
+
+  <action name="showhideInfo">
+
+     if(plugin[spot1html].visible == false,
+		txtadd(scenetitle, '[p][b]', get(scene[get(xml.scene)].ntitle),'[/b][/p]');
+		set(plugin[spot1html].html, get(scenetitle));
+		set(plugin[spot1html].visible, true);
+		txtadd(dspname,get(xml.scene), 'Description');
+		txtadd(scenedesc,  get(data[get(dspname)].content) );
+		set(plugin[spot2html].html, get(scenedesc) );
+		set(plugin[spot2html].visible, true);
+		 ,
+		 set(scenetitle,"");
+		 set(scenedesc,"");
+		 set(plugin[spot1html].html,"");
+		 set(plugin[spot1html].visible, false);
+		 set(plugin[spot2html].html, "" );
+		 set(plugin[spot2html].visible, false);
+	 );
+  </action>
+
+
+  <action name="refreshInfo">
+		set(scenetitle,"");
+		set(scenedesc,"");
+		txtadd(scenetitle, '[p][b]', get(scene[get(xml.scene)].ntitle),'[/b][/p]');
+		set(plugin[spot1html].html, get(scenetitle));
+		set(plugin[spot1html].visible, true);
+		txtadd(dspname,get(xml.scene), 'Description');
+		txtadd(scenedesc,  get(data[get(dspname)].content) );
+		set(plugin[spot2html].html, get(scenedesc) );
+		set(plugin[spot2html].visible, true);
+  </action>
+
+
+  <action name="showhideProInfo">
+
+     if(plugin[spot3html].visible == false,
+		txtadd(proInfo, '[p][b]', "项目介绍内容",'[/b][/p]');
+		set(plugin[spot3html].html, get(proInfo) );
+		set(plugin[spot3html].visible, true);
+		 ,
+		 set(plugin[spot3html].html, "" );
+		 set(plugin[spot3html].visible, false);
+	 );
+  </action>
+
+	<plugin name="introimage"
+	        keep="true"
+	        url="skin/introimage.png"
+	        align="center"
+	        onclick="hideintroimage();"
+			zorder="20"
+			visible="false"
+	        />
+
+	<action name="switchintroimage">
+		if(plugin[introimage].visible,
+			set(plugin[introimage].visible,false);
+			tween(plugin[introimage].alpha, 0.0, 0.5, default);
+			,
+			set(plugin[introimage].visible,true);
+			tween(plugin[introimage].alpha, 1.0, 0.5, default);
+		  );
+	</action>
+	<action name="switchmask">
+		if(plugin[textmask].visible,
+			set(plugin[textmask].visible,false);
+			tween(plugin[textmask].alpha, 0.0, 0.5, default);
+			,
+			set(plugin[textmask].visible,true);
+			tween(plugin[textmask].alpha, 1.0, 0.5, default);
+		  );
+	</action>
+	<action name="hideintroimage">
+		if(plugin[introimage].visible,
+			set(plugin[introimage].visible,false);
+			tween(plugin[introimage].alpha, 0.0, 0.5, default);
+		  );
+	</action>
+	<action name="closemask">
+		if(plugin[textmask].visible,
+			set(plugin[textmask].visible,false);
+			tween(plugin[textmask].alpha, 0.0, 0.5, default);
+		  );
+	</action>
+
+
+    <!--************** 开始场景时从一个球星变成平面时的效果 ***************************************************-->
+    <plugin name="data" firstPanoHasBeenPlayed="false" keep="true"/>
+
+    <action name="fromlittleplanetintrotonormalview">
+		tweennormalview();
+	</action>
+	
+    <action name="firstloadcompleteaction">
+		if(plugin[data].firstPanoHasBeenPlayed==false,
+			setlittleplanet();
+			wait(load);
+			set(plugin[data].firstPanoHasBeenPlayed,true);
+			startLittlePlanetIntroEffect();
+		);
+	</action>
+
+    <action name="startLittlePlanetIntroEffect">
+		if(plugin[data].firstPanoHasBeenPlayed == true,
+			delayedcall(1.0,
+				fromlittleplanetintrotonormalview();
+			);
+		);
+	</action>
+
+    <action name="setlittleplanet">
+		set(view.stereographic, true);
+		set(view.fisheye      , 1.0);
+		set(view.limitview    , lookat);
+		set(view.vlookatmin   , -90);
+		set(view.vlookatmax   , 90);
+		set(view.fov          , 150);
+		set(view.fovmax       , 150);
+		set(view.hlookat      , 0);
+		set(view.vlookat      , 90);
+		set(display.flash10   , off);
+		set(display.details   , 14);
+	</action>
+
+
+</krpano>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 指定Hibernate映射文件的DTD信息 
+ Hibernate映射文件的根元素 -->
+<hibernate-mapping  package="org.lwt.VRweb.model">
+    <class name="Speak" abstract="true">
+        <id name="id" type="integer" column="id">
+            <generator class="hilo"></generator>
+        </id>
+        <property name="date" not-null="true">
+        	<column name="date" sql-type="timestamp" default="CURRENT_TIMESTAMP"></column>
+        </property>
+        <property name="content" column="content" type="text"></property>
+        <many-to-one name="owner" column="user_id" not-null="true" lazy="false" />
+        <set name="comments" inverse="true" lazy="false">
+          <key column="speak_id"></key>
+          <one-to-many class="Comment"/>
+        </set>
+        <union-subclass name="Question" table="question_inf" >
+        	<property name="title" column="title" type="string"></property>
+        	<property name="tag" column="tag" type="string"></property>
+        	<property name="AC" column="access_count" type="integer"></property>
+        	<set name="answers" inverse="true">
+         		<key column="question_id"></key>
+        	  	<one-to-many class="Answer"/>
+       		</set>
+       		<many-to-one name="Category" column="category_id"  not-null="true" lazy="false"/>
+   		</union-subclass>
+   		<union-subclass name="Answer" table="answer_inf" >
+        	<property name="support" column="support" type="int"></property>
+        	<property name="oppose" column="oppose" type="int"></property>  
+        	<many-to-one name="question" column="question_id" not-null="true" />
+        	<set name="supportor"  inverse="false" table="user_sptAnswer">
+	            <key column="speak_id"></key>
+	            <many-to-many class="User" column="user_id"/>
+       		 </set>
+       		 <set name="opponent"  inverse="false" table="user_opsAnswer">
+	            <key column="speak_id"></key>
+	            <many-to-many class="User" column="user_id"/>
+       		 </set>
+    	</union-subclass>
+     	<union-subclass name="Comment" table="comment_inf">
+     		<many-to-one name="speak" column="speak_id" not-null="true" />
+    	</union-subclass>
+    </class>
+</hibernate-mapping>

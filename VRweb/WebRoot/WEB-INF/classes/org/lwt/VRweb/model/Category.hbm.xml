@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- 指定Hibernate映射文件的DTD信息 
+ Hibernate映射文件的根元素 -->
+<hibernate-mapping  package="org.lwt.VRweb.model">
+	<class name="Category" table="category">
+  		<!-- 映射标识属性 -->
+        <id column="shool_id" name="id" type="integer">
+   			 <!-- 指定使用identity主键生成策略 -->
+            <generator class="identity"/>
+        </id>
+ 		 <!-- 映射普通属性 -->
+        <property column="shool_name" length="30" name="name" not-null="true" type="string"/>
+        <property name="cateDescribe" column="cateDescribe" type="string"></property>
+        <property name="AC" column="access_count" type="integer"></property>
+        <property name="logo_img" length="10" column="logo_img" type="string"></property>
+        <property name="cate_detail" length="1000" column="cate_detail" type="string"></property>
+        <property name="address" length="50" column="address" type="string"></property>
+        <property name="startTime" length="20" column="startTime" type="string"></property>
+        <property name="Nature" length="30" column="Nature" type="string"></property>
+        <property name="tel" length="20" column="tel" type="string"></property>  
+        <property name="webAddress" length="30" column="webAddress" type="string"></property>  
+        <many-to-one name="City" column="city_id"  not-null="true" lazy="false"/>
+	</class>
+</hibernate-mapping>
